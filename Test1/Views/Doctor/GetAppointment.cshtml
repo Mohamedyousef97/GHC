@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "GetAppointment";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+
+<h2>GetAppointment</h2>
+
+<div class="row ">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="col-lg-3 col-sm-3" style="max-width:350px; margin:auto;min-width:300px">
+            <div class="card doctorsCard">
+                <img class="  rounded-circle CardPhotoPatients" src="../CustomFolder/patient2.jpg" alt="Card image cap">
+                <div class="card-body " style="margin-top: -30px;">
+                    <hr class="doctorsCardHr">
+                    Cras justo odio
+                    @*<hr class="doctorsCardHr">*@
+                    Cras justo odio
+                    @*<hr class="doctorsCardHr">*@
+                    Cras justo odio
+
+                    <hr class="doctorsCardHr">
+                    <input type="button" class="btn btn-primary text-center " value=" View " style=" border-radius:4px;padding:4px;margin:auto" />
+                    <input type="button" class="btn btn-success text-center " value="Accept" style="border-radius:4px;padding:4px;margin:auto " />
+                    <input type="button" class="btn btn-danger text-center " value="Cancel" style="border-radius:4px;padding:4px; margin:auto " />
+
+                    @*<hr class="doctorsCardHr">*@
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
